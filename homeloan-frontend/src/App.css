@@ -1,0 +1,45 @@
+:root{
+  --blue: white
+}
+
+.letsConnect {
+  transition: background-color border-color 1s linear !important;
+}
+
+.vh100{
+  height: 100vh;
+}
+.vw100{
+  width: 100vw;
+}
+.h100{
+  height: 80vh!important;
+}
+.pointer{
+  cursor: pointer;
+}
+
+.verticleAlignMiddle , .verticleAlignMiddle > *{
+  vertical-align: middle!important;
+}
+.letsConnect:hover {
+  background-color: var(--blue) !important;
+  border-color: black !important; 
+}
+.letsConnect:hover > span {
+ color:black !important;
+}
+.letsConnect:hover > i {
+ color:black !important;
+}
+.letsConnect > i {
+  animation: bounceInLeft;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes bounceInLeft {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+}
